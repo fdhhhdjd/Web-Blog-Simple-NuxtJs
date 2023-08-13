@@ -6,13 +6,33 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "pre-commit": "echo \"[Husky] pre-commit\""
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npx lint-staged"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
     "@types/node": "^18.16.19",
     "nuxt": "^3.6.3",
-    "prisma": "^5.1.1"
+    "prisma": "^5.1.1",
+    "@commitlint/cli": "^17.6.5",
+    "@commitlint/config-conventional": "^17.6.5",
+    "husky": "^8.0.0",
+    "eslint": "^8.45.0",
+    "eslint-plugin-import": "^2.28.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-sonarjs": "^0.19.0",
+    "eslint-plugin-vue": "^9.15.1",
+    "prettier": "^3.0.0"
   },
   "dependencies": {
     "@nuxtjs/supabase": "^0.3.8",

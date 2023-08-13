@@ -1,0 +1,17 @@
+{
+  "vetur.validation.template": true,
+  "vetur.format.defaultFormatter.html": "none",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // Set the default
+  "editor.formatOnSave": false,
+  // Enable per-language
+  "[javascript]": {
+    "editor.formatOnSave": true
+  },
+  "[vue]": {
+    "editor.formatOnSave": true
+  },
+  "cSpell.words": [
+    "localstorage"
+  ]
+}
