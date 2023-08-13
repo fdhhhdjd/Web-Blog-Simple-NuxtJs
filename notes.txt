@@ -1,0 +1,14 @@
+CREATE PROJECT
+npx nuxi@latest init Blog-Simple-NuxtJs
+
+SUPABASE:
+project password: nguyentientai!
+
+PRISMA:
+npx prisma init
+npx prisma generate
+npx prisma migrate dev --name init
+
+NPM PACKAGES: 
+npm i @nuxtjs/supabase @nuxtjs/tailwindcss @pinia/nuxt @prisma/client @vite-pwa/nuxt nuxt-icon prisma uuid 
+npm i pinia -f
